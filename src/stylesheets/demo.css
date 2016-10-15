@@ -1,0 +1,5 @@
+.eureka {
+  height: 100px;
+  width: 100px;
+  background-image: svg("lighting-bulb", "[fill]: gold");
+}

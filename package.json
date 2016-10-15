@@ -1,21 +1,25 @@
 {
-  "name": "PLUGIN_NAME",
+  "name": "conf-manilajs-postcss",
   "version": "0.0.0",
-  "description": "PostCSS plugin PLUGIN_DESC",
+  "description": "PostCSS plugin For Manila JS Oct 20 2016",
   "keywords": [
     "postcss",
     "css",
-    "postcss-plugin"KEYWORDS
+    "postcss-plugin",
+    "manilajs"
   ],
-  "author": "AUTHOR_NAME <AUTHOR_EMAIL>",
+  "author": "Amiel Perez <perezamielymproxy@gmail.com>",
   "license": "MIT",
-  "repository": "GITHUB_NAME/PLUGIN_NAME",
+  "repository": "amielperez/conf-manilajs-postcss",
   "bugs": {
-    "url": "https://github.com/GITHUB_NAME/PLUGIN_NAME/issues"
+    "url": "https://github.com/amielperez/conf-manilajs-postcss/issues"
   },
-  "homepage": "https://github.com/GITHUB_NAME/PLUGIN_NAME",
+  "homepage": "https://github.com/amielperez/conf-manilajs-postcss",
   "dependencies": {
-    "postcss": "^5.2.0"
+    "postcss": "^5.2.0",
+    "gulp": "latest",
+    "gulp-postcss": "latest",
+    "postcss-svg": "latest"
   },
   "devDependencies": {
     "ava": "^0.16.0",
