@@ -19,7 +19,11 @@
     "postcss": "^5.2.0",
     "gulp": "latest",
     "gulp-postcss": "latest",
-    "postcss-svg": "latest"
+    "postcss-svg": "latest",
+    "postcss-color-gray": "latest",
+    "postcss-selector-not": "latest",
+    "postcss-each": "latest",
+    "postcss-zindex": "latest"
   },
   "devDependencies": {
     "ava": "^0.16.0",

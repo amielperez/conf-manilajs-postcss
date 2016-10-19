@@ -1,0 +1,33 @@
+/* Convert to rgb gray */
+.blackish-gray{
+  color: rgb(0, 0, 0);
+}
+
+.mid-gray{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Convert from CSS4 not to CSS3 not */
+p:not(:first-child):not(.special) {
+  color: red;
+}
+
+/* Expand into .icon-hoge, .icon-piyo, .icon-fuga with matching img urls */
+.icon-hoge{
+  background: url('icons/hoge.png');
+}
+.icon-piyo{
+  background: url('icons/piyo.png');
+}
+.icon-fuga{
+  background: url('icons/fuga.png');
+}
+
+/* shrink z-index range into 1..2 */
+.modal {
+    z-index: 1
+}
+
+.modal-overlay {
+    z-index: 2
+}

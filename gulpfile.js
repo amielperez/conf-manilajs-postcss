@@ -1,25 +1,19 @@
 var gulp = require("gulp")
 var postcss = require("gulp-postcss")
-var svg = require("postcss-svg")
+var gray = require("postcss-color-gray")
+var each = require("postcss-each")
+var not = require("postcss-selector-not")
+var zindex = require("postcss-zindex")
 
 
-gulp.task('css', () => {
+gulp.task('demo', () => {
   var processors = [
-    svg({
-      paths: ['./src/assets']
-    })
+    gray,
+    each,
+    not,
+    zindex
   ]
-  return gulp.src('./src/stylesheets/*.css')
+  return gulp.src('./src/stylesheets/demo.css')
     .pipe(postcss(processors))
-    .pipe(gulp.dest('./dest/stylesheets'))
+    .pipe(gulp.dest('./dist/stylesheets'))
 })
-
-gulp.task('assets', () => {
-  return gulp.src('./src/assets').pipe(gulp.dest('./dest/assets'))
-})
-
-gulp.task('index', () => {
-  return gulp.src('./src/index.html').pipe(gulp.dest('./dest'))
-})
-
-gulp.task('magic', ['css', 'assets', 'index'])

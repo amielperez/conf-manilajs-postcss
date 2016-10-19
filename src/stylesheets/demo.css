@@ -1,0 +1,29 @@
+/* Convert to rgb gray */
+.blackish-gray{
+  color: gray(0);
+}
+
+.mid-gray{
+  color: gray(255, 50%);
+}
+
+/* Convert from CSS4 not to CSS3 not */
+p:not(:first-child, .special) {
+  color: red;
+}
+
+/* Expand into .icon-hoge, .icon-piyo, .icon-fuga with matching img urls */
+@each $icon in hoge, piyo, fuga {
+  .icon-$(icon) {
+    background: url('icons/$(icon).png');
+  }
+}
+
+/* shrink z-index range into 1..2 */
+.modal {
+    z-index: 5000
+}
+
+.modal-overlay {
+    z-index: 5500
+}
